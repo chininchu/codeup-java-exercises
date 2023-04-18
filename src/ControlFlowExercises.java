@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class ControlFlowExercises {
 
     public static void main(String[] args) {
@@ -150,8 +152,83 @@ public class ControlFlowExercises {
 //
 //        }
 
+//Display a table of powers.
 
+//Prompt the user to enter an integer.
+//Display a table of squares and cubes from 1 to the value entered.
+//Ask if the user wants to continue.
+//Assume that the user will enter valid data.
+//Only continue if the user agrees to.
+
+        Scanner sc = new Scanner(System.in);
+
+//        boolean confirm;
+//
+//        do {
+//            System.out.println("Enter a integer: ");
+//            int userInt = sc.nextInt();
+//            System.out.println("Here is your table!");
+//            System.out.println("number | squared | cubed");
+//            System.out.println("------ | ------- | -----");
+//
+//
+//            for (int i = 1; i <= userInt; i++) {
+//                int square = i * i;
+//                int cubed = i * i * i;
+//
+//                System.out.printf("%7s|%9s|%6s %n", i, square, cubed);
+//            }
+//
+//            System.out.print("Continue? [y/n]");
+//            confirm = sc.next().equalsIgnoreCase("y");
+//
+//        } while (confirm);
+//        System.out.println("See you next time");
+
+
+//        Convert given number grades into letter grades.
+//
+//                Prompt the user for a numerical grade from 0 to 100.
+//                Display the corresponding letter grade.
+//                Prompt the user to continue.
+//                Assume that the user will enter valid integers for the grades.
+//                The application should only continue if the user agrees to.
+//                  Grade Ranges:
+//
+//                   A : 100 - 88
+//                   B : 87 - 80
+//                   C : 79 - 67
+//                   D : 66 - 60
+//                   F : 59 - 0
+
+
+        boolean confirm;
+
+
+        do {
+            System.out.println("Enter a numerical grade: ");
+            int userGrade = sc.nextInt();
+
+            if (userGrade >= 88) {
+                System.out.println("A");
+            } else if (userGrade >= 80) {
+                System.out.println("B");
+            } else if (userGrade >= 67) {
+                System.out.println("C");
+            } else if (userGrade >= 60) {
+                System.out.println("D");
+            } else {
+                System.out.println("F");
+            }
+
+            System.out.print("Continue? [y/n]");
+            confirm = sc.next().equalsIgnoreCase("y");
+
+
+        } while (confirm);
+        System.out.println("Ok bye !");
 
 
     }
 }
+
