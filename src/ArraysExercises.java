@@ -1,7 +1,7 @@
-import java.util.Arrays;
+//import java.util.Arrays;
 
 
-public class ArraysExercises {
+//public class ArraysExercises {
 
 
 //    Array Basics
@@ -14,56 +14,59 @@ public class ArraysExercises {
 
 //    Create a static method named addPerson. It should accept an array of Person objects, as well as a single person object to add to the passed array. It should return an array whose length is 1 greater than the passed array, with the passed person object at the end of the array.
 
-    public static Person[] addPerson(Person[] person , Person singlePerson ){
+//    public static Person[] addPerson(Person[] person , Person singlePerson ){
+//
+//
+//    }
+//
+//
+//    public static void main(String[] args) {
+//
+//        int[] numbers = {1, 2, 3, 4, 5};
+//        System.out.println(Arrays.toString(numbers));
+//
+//        // Java prints out the ID of the Object. The Arrays.toString converts numerical values to a String.
+//
+//
+//        String[] persons = {"Andrew","John", "Josh"};
+//
+//        for(String person: persons){
+//            System.out.println(person);
+//
+//
+//
+//
+//
+//        }
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//    }
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//}
 
 
-    }
 
-
-    public static void main(String[] args) {
-
-        int[] numbers = {1, 2, 3, 4, 5};
-        System.out.println(Arrays.toString(numbers));
-
-        // Java prints out the ID of the Object. The Arrays.toString converts numerical values to a String.
-
-
-        String[] persons = {"Andrew","John", "Josh"};
-
-        for(String person: persons){
-            System.out.println(person);
-
-
-
-
-
-        }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    }
-
-
-
-
-
-
-
-
-
-
-
-}
