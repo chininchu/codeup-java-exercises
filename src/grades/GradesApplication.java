@@ -2,6 +2,8 @@ package grades;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Scanner;
+
 
 
 public class GradesApplication {
@@ -13,6 +15,7 @@ public class GradesApplication {
         Student Student2 = new Student("Student2");
         Student Student3 = new Student("Student3");
         Student Student4 = new Student("Student4");
+
 
         Student1.addGrade(30);
         Student2.addGrade(40);
@@ -31,18 +34,72 @@ public class GradesApplication {
 
         students.put("Student4@github.com" + " ", " " + Student4.getName() + " " + Student4.getGradeAverage());
 
-//        System.out.println(students);
+
+
+
 
         System.out.println("Welcome" + "\n" + "Here are the GitHub usernames of our students:\n");
 
+            for (Map.Entry<String, String> entry : students.entrySet()) {
 
-        for (Map.Entry<String, String> entry : students.entrySet()) {
-            System.out.print("|" + entry.getKey() + "|" + " ");
-        }
-
+                System.out.print("|" + entry.getKey() + "|" + " ");
 
 
+
+
+
+
+
+
+            }
+
+
+        System.out.println("\n What student would you like to see more information on?");
+
+        Scanner sc = new Scanner(System.in);
+
+        String userInput = sc.next();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//        System.out.println("\n" + "What student would you like to see more information on?\n");
+//
+//        Scanner sc = new Scanner(System.in);
+//
+//        String userInput = sc.next();
+//
+//        if (userInput.equalsIgnoreCase(entry.getKey())) {
+//
+//            System.out.printf(entry.getValue());
+//
+//
+//        }
 
 
     }
+
 }
+
