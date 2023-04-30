@@ -1,6 +1,8 @@
 package grades;
 
 import java.util.ArrayList;
+import java.util.HashMap;
+import  java.util.Map;
 
 public class Student {
     private String name;
@@ -42,6 +44,9 @@ public class Student {
 
         return sum / grades.size();
     }
+
+
+
 
 
 }
