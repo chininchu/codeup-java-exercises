@@ -54,10 +54,27 @@ public class Input {
 
     public int getInt() {
         System.out.println("Please enter a number: ");
-        int userInput = scanner.nextInt();
-        return userInput;
+//        int userInput = scanner.nextInt();
+//        return userInput;
+
+
+        String userInput = getString();
+
+
+        try {
+            return Integer.valueOf(userInput);
+
+
+        } catch (NumberFormatException e) {
+
+            System.out.println("Requires a Number");
+            return getInt();
+
+
+        }
 
     }
+
 
     public double getDouble(double min, double max) {
         System.out.println("Please enter a number between " + min + " and " + max);
@@ -70,8 +87,26 @@ public class Input {
 
     public double getDouble() {
         System.out.println("Please enter a number: ");
-        double userInput = scanner.nextDouble();
-        return userInput;
+//        double userInput = scanner.nextDouble();
+//        return userInput;
+
+
+        String userInput = getString();
+
+
+        try {
+
+            return Double.valueOf(userInput);
+
+        } catch (NumberFormatException e) {
+
+            System.out.println("Please enter a decimal value");
+            return getDouble();
+
+
+        }
+
+
     }
 
 
