@@ -72,12 +72,59 @@ public class GradesApplication {
 
             key = "|" + entry.getKey() + "|" + " ";
 
-            String keyMatch = String.valueOf(userInput.equalsIgnoreCase(entry.getKey()));
+//            String keyMatch = String.valueOf(userInput.equalsIgnoreCase(entry.getKey()));
+
+            if (userInput.equalsIgnoreCase(entry.getKey())) {
+
+                System.out.println(entry.getValue() + userInput);
+
+
+            } else if (!userInput.equalsIgnoreCase(entry.getKey())) {
+
+
+            }
 
 
         }
 
-        System.out.println("Passed");
+        System.out.println("Sorry, no student found with the GitHub username of" + userInput);
+
+        System.out.println("Would you like to see another student?\n");
+
+
+        userInput = sc.next();
+
+        if (userInput.equalsIgnoreCase("no")) {
+
+            System.out.println("Goodbye, and have a wonderful day!\n");
+
+
+        } else {
+
+
+            // Displays thr Welcome message
+
+
+            System.out.println("Welcome!\n" +
+                    "\n" +
+                    "Here are the GitHub usernames of our students:\n");
+
+
+            key = " ";
+
+            // The forLoop prints the usernames for the students
+
+
+            for (Map.Entry<String, String> entry : students.entrySet()) {
+
+                key = "|" + entry.getKey() + "|" + " ";
+                System.out.printf(key);
+
+
+            }
+
+            System.out.println("\nWhat student would you like to see more information on?");
+        }
 
 
     }
